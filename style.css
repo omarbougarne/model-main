@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050505;
+}
+.main-title{
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+ul.linken {
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+
+ul.linken li {
+    margin: 0 15px; 
+}
+
+ul.linken li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: end;
+}
+
+ul.linken .dropdown li {
+    display: block;
+}
+
+ul.linken .dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+ul.linken li:hover .dropdown {
+    display: block;
+}
+.image{
+    position: relative;
+    position: relative;
+    left: 800px;
+}
+.main-image{
+    width: 50%;
+}
+.screen-title{
+    color: #e0ff65;
+    font-size: 200px;
+}
+.home-screen{
+    display: flex;
+    position: absolute;
+    top: 250px;
+}
+p{
+    position: absolute;
+    top: 500px;
+}
+span{
+    color: #e0ff65;
+}
+.subscribe{
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 70px;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+form {
+    width: 100%;
+    max-width: 300px; /* Set a max-width for the form */
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin: 10px 0;
+    color: white;
+}
+
+input {
+    border: 1px solid white;
+    padding: 5px;
+    border: 1px solid white; 
+    border-radius: 3px;
+    background-color: black;
+    height: 50px;
+}
+
+button {
+    background: #E0FF65;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+}
+footer .footer-text{
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 40%;
+    color: white;
+}
+.catalogue-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalogue-images-1, .catalogue-images-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 70%;
+    height: 25%;
+    margin: 50px;
+}
+.text-catalogue, .price{
+    color: #fff;
+    position: relative;
+    right: 250px;
+    bottom: 100px;
+    top: -30px;
+    left: -190px;
+}
+.women-catalogue{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+}
