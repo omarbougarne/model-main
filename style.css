@@ -130,7 +130,7 @@ footer .footer-text{
     flex-direction: column;
     align-items: center;
 }
-img{
+.image-catalogue-1{
     width: 70%;
     height: 25%;
     margin: 50px;
@@ -148,4 +148,42 @@ img{
     text-align: center;
     font-size: 50px;
     font-style: bold;
+}
+ .catalogue-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalogue-images-22, .catalogue-images-33{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.text-catalogue, .price{
+    color: #fff;
+    position: relative;
+    right: 250px;
+    bottom: 100px;
+    top: -30px;
+    left: -190px;
+}
+.men-catalogue{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+}
+.image-catalogue-2{
+    width: 90%;
+    height: 25%;
+    margin: 50px;
+}
+.imgg{
+    height: 650px;
+}
+.imgs{
+    height: 730px;
 }
