@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h2 class="main-title">Fashion <span>Hub</span> </h2>
+        <h2 class="main-title">Fashion<span>Hub</span></h2>
         <div class="links">
         <ul class="linken">
             <li><a href="#">Home</a></li>
@@ -28,11 +28,76 @@
     <img src="./assets/home.png" alt="" class="main-image">
     </div>
     <div class="home-screen">
-         <h1 class="screen-title">FASHION <br>HUB</h1>
-         <p style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus ex nec <br> ante egestas tempor. Ut et justo vitae est varius lacinia imperdiet eleifend magna. <br> Donec gravida nunc a augue fermentum commodo nec nec arcu. Sed in laoreet </p>
+         <h1 class="screen-title">FASHION<br>HUB</h1>
+         <p style="color: #fff;" class="lorem-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus ex nec <br> ante egestas tempor. Ut et justo vitae est varius lacinia imperdiet eleifend magna. <br> Donec gravida nunc a augue fermentum commodo nec nec arcu. Sed in laoreet </p>
+    </div>
+    <br>
+    <br>
+    <h2 class="reviews">Reviews</h2>
+    <div class="review-1">
+        <img src="/assets/rev1.png" alt="" class="rev-1-image">
+        <h3 class="review-heading">Satisfied</h3>
+        <p class="review-text">I am very satisfied with your products it's high quality and fashionable</p>
+    </div>
+    <div class="review-1">
+        <img src="/assets/rev2.png" alt="" class="rev-1-image">
+        <h3 class="review-heading">Satisfied</h3>
+        <p class="review-text">Happy that i knew this fashion site legit best street-wear i ever bought</p>
+    </div>
+    <div class="review-1">
+        <img src="/assets/rev3.png" alt="" class="rev-1-image">
+        <h3 class="review-heading">Satisfied</h3>
+        <p class="review-text">Beutifull inspiring i feel confident wearing ur clothingsthis is how eve</p>
+    </div>
+    <button class="sub">Subscribe Now</button>
+    <div class="wrapper">
+        <h1>FAQ</h1>
+        <div class="faq">
+            <button class="faq-button">
+                Do u ship internationally
+            </button>
+            <div class="pannel">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, adipisci!</p>
+
+            </div>
+        </div>
+        <div class="faq">
+            <button class="faq-button">
+                Do you have XXL sizes            
+            </button>
+            <div class="pannel">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, adipisci!</p>
+                
+            </div>
+        </div>
+        <div class="faq">
+            <button class="faq-button">
+                How about black colored clothing            
+            </button>
+            <div class="pannel">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, adipisci!</p>
+                
+            </div>
+        </div>
     </div>
     <footer>
         <p>&copy; Copyright FashionHub 2023</p>
     </footer>
+    <script>
+        var acc = document.getElementsByClassName("faq-button");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+                var pannel = this.nextElementSibling;
+                if (pannel.style.display === "block") {
+                    pannel.style.display = "none";
+                } else {
+                    pannel.style.display = "block";
+                }
+            })
+        }
+    </script>
 </body>
 </html>
