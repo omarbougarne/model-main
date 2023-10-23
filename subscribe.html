@@ -9,20 +9,17 @@
 <body>
     <header>
         <h2 class="main-title">Fashion <span>Hub</span> </h2>
-        <div class="links">
-        <ul class="linken">
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <a href="#">Catalogue</a>
-                <ul class="dropdown">
-                    <li><a href="ctalogue2.html">Men</a></li>
-                    <li><a href="catalogue1.html">Women</a></li>
-                    <li><a href="catalogue3.html">Kids</a></li>
-                </ul>
-            </li>
-            <li><a href="subscribe.html">Sign-up</a></li>
-        </ul>
-        </div>
+        <nav>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+             <ul class="mainMenu">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="catalogue1.html">Women</a></li>
+                 <li><a href="ctalogue2.html">Men</a></li>
+                 <li><a href="catalogue3.html">Kids</a></li>
+                 <li><a href="subscribe.html">Sign-up</a></li>
+                 <div class="closeMenu"><i class="fa fa-times"></i></div>
+             </ul>
+         </nav>
     </header>
     <h2 class="subscribe">Subscribe</h2>
     <div class="container">
@@ -36,8 +33,9 @@
             <button type="submit" class="sign-up">Sign-up</button>
         </form>
     </div>
-    <footer>
-        <p>&copy; Copyright FashionHub 2023</p>
-    </footer>
+    <div class="footer">
+        <p class="footer-text">&copy; Copyright FashionHub 2023</p>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

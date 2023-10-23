@@ -9,20 +9,18 @@
 <body>
     <header>
         <h2 class="main-title">Fashion<span>Hub</span></h2>
-        <div class="links">
-        <ul class="linken">
-            <li><a href="#">Home</a></li>
-            <li>
-                <a href="#">Catalogue</a>
-                <ul class="dropdown">
-                    <li><a href="catalogue2.html">Men</a></li>
-                    <li><a href="catalogue1.html">Women</a></li>
-                    <li><a href="catalogue3.html">Kids</a></li>
-                </ul>
-            </li>
-            <li><a href="subscribe.html">Sign-up</a></li>
-        </ul>
-        </div>
+        <nav>
+           <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue1.html">Women</a></li>
+                <li><a href="ctalogue2.html">Men</a></li>
+                <li><a href="catalogue3.html">Kids</a></li>
+                <li><a href="subscribe.html">Sign-up</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+        
     </header>
     <div class="image">
     <img src="./assets/home.png" alt="" class="main-image">
@@ -51,7 +49,7 @@
     </div>
     <button class="sub">Subscribe Now</button>
     <div class="wrapper">
-        <h1>FAQ</h1>
+        <h1 class="faq-header">FAQ</h1>
         <div class="faq">
             <button class="faq-button">
                 Do u ship internationally
@@ -80,24 +78,28 @@
             </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; Copyright FashionHub 2023</p>
-    </footer>
+    <div class="footer">
+        <p class="footer-text">&copy; Copyright FashionHub 2023</p>
+    </div>
+    <script src="https://kit.fontawesome.com/b087d8ff9c.js" crossorigin="anonymous"></script>
     <script>
-        var acc = document.getElementsByClassName("faq-button");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                this.parentElement.classList.toggle("active");
-                var pannel = this.nextElementSibling;
-                if (pannel.style.display === "block") {
-                    pannel.style.display = "none";
-                } else {
-                    pannel.style.display = "block";
-                }
-            })
-        }
-    </script>
+    var acc = document.getElementsByClassName("faq-button");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+                this.style.width = "auto"; // Set the button width to auto when panel is hidden
+            } else {
+                panel.style.display = "block";
+                this.style.width = "100%"; // Set the button width to 100% when panel is shown
+            }
+        });
+    }
+</script>
+<script src="main.js"></script>
 </body>
 </html>

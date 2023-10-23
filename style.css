@@ -4,8 +4,7 @@
 }
 
 body {
-    background-color: #050505;
-    margin-bottom: 500px;
+ background-color: #050505;
 }
 .main-title{
     color: #fff;
@@ -15,37 +14,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-}
-
-ul.linken {
-    list-style: none;
-    display: flex;
-    margin-right: 100px;
-}
-
-ul.linken li {
-    margin: 0 15px; 
-}
-
-ul.linken li a {
-    color: #fff;
-    text-decoration: none;
-    text-align: end;
-}
-
-ul.linken .dropdown li {
-    display: block;
-}
-
-ul.linken .dropdown {
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    display: none;
-}
-
-ul.linken li:hover .dropdown {
-    display: block;
 }
 .image{
     position: relative;
@@ -115,10 +83,10 @@ input {
     margin-top: 10px;
     width: 50%;
 }
-footer .footer-text{
+ .footer-text{
     text-align: center;
     margin-top: 250px;
-    margin-left: 40%;
+    margin-left: 5%;
     color: white;
 }
 .catalogue-1{
@@ -242,8 +210,9 @@ footer .footer-text{
 .faq-button{
     color: #fff;
     background-color: #3E3F3C;
-    width: 100%;
+    width: 290px;
     height: 30px;
+    margin-top: 10px;
 }
 p{
     color: #fff;
@@ -262,4 +231,172 @@ p{
 }
 .pannel{
     display: none;
+}
+.faq-header{
+    color: #E0FF65;
+}
+nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+@media (max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+      }
+      nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      nav .openMenu {
+        display: block;
+      }
+      .icons i {
+        display: inline-block;
+        padding: 12px;
+      }
+    .main-image{
+        display: none;
+    }
+    .home-screen{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        position: relative;
+    }
+    .screen-title{
+        font-size: 5rem;
+    }
+    .lorem-p{
+        position: relative;
+        top: 0;
+    }
+    .review-1 {
+        position: relative;
+        top: 700px;
+        margin-left: 70px;
+        display: flex;
+        justify-content: center;
+        top: 90px;
+    }
+    .rev-1-image{
+        display: none;
+    }
+    .footer{
+        position: absolute;
+        top: 400px;
+        margin-top: 1000px;
+        text-align: center;
+        right: 150px;
+        margin-left: 100px;
+    }
+    .wrapper{
+        position: absolute;
+        top: 500px;
+        margin-top: 800px;
+        margin-left: 100px;
+    }
+    .reviews{
+        margin-top: 250px;
+        font-size: 1.5rem;
+    }
+    .sub{
+        font-size: 0.5rem;
+        position: relative;
+        top: 100px;
+        right: 380px;
+        width: 50%;
+    }
+    .catalogue-images-1{
+        margin-left: 50px;
+    }
+    .text-catalogue, .price{
+        font-size: 0.5rem;
+        margin-left: 250px;
+    }
+    .imgg{
+        height: 300px;
+    }
+    .image-catalogue-2{
+        width: 50%;
+        display: flex;
+    }
+    .imgs{
+        height: 236px;
+    }
+    .catalogue-images-22, .catalogue-images-33{
+       display: flex;
+        justify-content: space-evenly;
+    }
+    .image-22{
+        margin-left: 50px;
+    }
+    .image-catalogue-2{
+        height: 236px;
+    }
+    .image-catalogue-1{
+        width: 143px;
+        height: 236px;
+    }
+    .text-catalogue-3, .price-3{
+        font-size: 0.5rem;
+        margin-left: 200px;
+    }
+    .fa-solid.fa-bars{
+        display: block;
+        margin-left: 250px;
+    }
+    ul.linken li a{
+        display: none;
+        color: #fff;
+        background-color: #fff;
+    }
+    div.links{
+        color: #fff;
+    }
+    } 
+
+input{
+    color: #fff;
 }
