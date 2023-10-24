@@ -236,8 +236,8 @@ p{
     color: #E0FF65;
 }
 nav {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background:#000;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -251,7 +251,7 @@ nav {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 18px;
     transition: 0.2s ease;
   }
@@ -267,33 +267,50 @@ nav {
     display: none;
     cursor: pointer;
   }
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 90px;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 50px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  header {
+    background-color: #000;
+    height: 80px;
+  }
 @media (max-width: 800px){
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        transition: top 1s ease 0s;
+    .menu-desktop {
         display: none;
-      }
-      nav .mainMenu .closeMenu {
-        display: block;
+        flex-direction: column;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1;
       }
-      nav .openMenu {
-        display: block;
+    
+      .menu-desktop.active {
+        display: flex;
       }
-      .icons i {
-        display: inline-block;
-        padding: 12px;
+    
+      .menu-toggle {
+        display: flex;
       }
     .main-image{
         display: none;
